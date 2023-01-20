@@ -6,6 +6,8 @@ div,p,h1,h2,h3,h4,h5,h6,li,span{
 .ngx-pagination {
     margin: 0 auto;
     text-align: center;
+  color: #fff;
+  background-color: azure;
 }
 
 .ngx-pagination li {
@@ -13,12 +15,18 @@ div,p,h1,h2,h3,h4,h5,h6,li,span{
     font-size: 16px;
     font-weight: 600;
     border-radius: 50%;
+    color: #fff;
+
+}
+.page-content{
+ 
 
 }
 .ngx-pagination .current{
   width: 35px;
   border-radius: 50%;
     height: 35px;
+    color: #fff;
 }
 .ngx-pagination .current span
 {
@@ -26,4 +34,6 @@ div,p,h1,h2,h3,h4,h5,h6,li,span{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
+
