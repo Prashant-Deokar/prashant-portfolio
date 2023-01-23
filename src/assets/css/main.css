@@ -1273,11 +1273,11 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .progress-container.progress-primary .progress {
-  background: rgba(174, 13, 13, 0.866);
+  background: rgba(110, 106, 106, 0.866);
 }
 
 .progress-container.progress-primary .progress-bar {
-  background: #0aee2c;
+  background: #4de108;
 }
 
 .progress-container.progress-primary .progress-value,
