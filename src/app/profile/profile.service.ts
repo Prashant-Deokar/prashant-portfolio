@@ -129,7 +129,20 @@ export class ProfileService {
       location: 'Pune',
       timeline: 'march 2022 to December',
       role: 'Full Stack Developer',
-      work: 'Working as a full stack developer .Responsible for handling the UI in Angular and Managing the RestFul api calls.'
+      work: `I am working on Ondc project of protean eGov Technologies Pvt.Ltd.  
+      (Formerly NSDL e-Governance Infrastructure Limited) .
+
+      Project - Ondc (Open network digital commerce) .
+      Technologies : Angular 8, spring Boot, postgreSQL .
+      Description - 
+      In this project I use gateway. which is ondc using this gateway buyer and. seller can be communicate each other to buy and sell product from any
+      platform there is no need to specific platform to buy and sell product . 
+
+       Roles and responsibilities - .
+       	Design ,build and maintain efficient and reliable java and also angular code .
+       	Work on extensions of existing products .
+       Suggest and implements and improvements on current products .
+       	Identify defect / issues and raise  a CR to the change control board, track the defect status.`
 
     },
     {
@@ -141,7 +154,9 @@ export class ProfileService {
       work: `Technologies : Angular 8, spring Boot, MySql, SQL.
       Worked on the product of Growth99 which allowed other clients to come and integrate our product in their website .
       Worked on REST Api , Admin Dashboard , Appointment Booking for services and UI of the application .
-      Created sections like templates for email, sms, landing pages, clinic, services, providers and triggers Automation.`
+      Created sections like templates for email, sms, landing pages, clinic, services, providers and triggers Automation .
+      This project was based on Booking appointments. A doctor will be able to see he’s booking history, A patient can book an appointment through this website, patient can discuss with a doctor, online money transaction is also available. In this project I worked on Angular, I fixed some bugs like restrictions and validations, added some functionality in this project like country code, Export as PDF and ExporASExcel, Duplication &Deletion issues, 
+      calendar issues and added some editable Option Fixed error message and clickable bugs.`
     },
   //   {
   //     id: 2,
