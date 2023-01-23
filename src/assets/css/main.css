@@ -1273,11 +1273,11 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .progress-container.progress-primary .progress {
-  background: rgba(10, 49, 68, 0.349);
+  background: rgba(174, 13, 13, 0.866);
 }
 
 .progress-container.progress-primary .progress-bar {
-  background: #00334D;
+  background: #0aee2c;
 }
 
 .progress-container.progress-primary .progress-value,
@@ -1875,7 +1875,7 @@ body {
 }
 
 .bg-primary {
-  background-color: #00334D !important;
+  background-color: #20be23 !important;
 }
 
 .bg-info {
