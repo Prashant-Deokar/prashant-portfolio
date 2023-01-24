@@ -7,7 +7,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class ProfileService {
-  //baseUrl = environment.baseUrl;
+  baseUrl = environment.baseUrl;
 
   constructor(
     private http: HttpClient
@@ -239,5 +239,11 @@ export class ProfileService {
   extraCircular(): Observable<any> {
     // return this.http.get(this.baseUrl + 'exprience');
     return this.extraCircularInfo;
+  }
+
+  sentMessage(data:any) {
+    return this.http.post(`http://localhost:9090/api/message`,data);
+    //  return this.http.post(this.baseUrl + data);
+
   }
 }

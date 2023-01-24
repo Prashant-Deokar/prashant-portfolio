@@ -12,12 +12,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form
-                      name="form"
-                      (ngSubmit)="(f.form.valid); f.resetForm()"
-                      #f="ngForm"
-                      novalidate
-                    >
+                    <form [formGroup]="contactForm" (submit)="onSubmit()">
                       <div class="p pb-3">
                         <strong>Feel free to contact me </strong>
                       </div>
@@ -32,11 +27,8 @@
                               type="text"
                               name="name"
                               placeholder="Name"
-                              [(ngModel)]="model.name"
-                              #name="ngModel"
-                              [ngClass]="{
-                                'is-invalid': f.submitted && name.invalid
-                              }"
+                             
+                             
                               required
                             />
                           </div>
@@ -53,11 +45,8 @@
                               type="text"
                               name="subject"
                               placeholder="Subject"
-                              [(ngModel)]="model.subject"
-                              #subject="ngModel"
-                              [ngClass]="{
-                                'is-invalid': f.submitted && subject.invalid
-                              }"
+                              
+                             
                               required
                             />
                           </div>
@@ -71,15 +60,10 @@
                             </span>
                             <input
                               class="form-control"
-                              type="text"
+                              type="email"
                               name="email"
                               placeholder="E-mail"
-                              [(ngModel)]="model.email"
-                              #email="ngModel"
-                              [ngClass]="{
-                                'is-invalid': f.submitted && email.invalid
-                              }"
-                              pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                             
                               required
                             />
                           </div>
@@ -92,11 +76,7 @@
                               class="form-control"
                               name="message"
                               placeholder="Your Message"
-                              [(ngModel)]="model.message"
-                              #message="ngModel"
-                              [ngClass]="{
-                                'is-invalid': f.submitted && message.invalid
-                              }"
+                            
                               required
                             ></textarea>
                           </div>
