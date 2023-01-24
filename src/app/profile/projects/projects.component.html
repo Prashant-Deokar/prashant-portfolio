@@ -2,7 +2,7 @@
     <div class="container cc-education">
         <div class="h4 text-center mb-4 title" id="title">Projects</div>
 
-        <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+       
         <div class="row">
 
             <ng-container *ngFor="let project of projects| paginate: config">
@@ -21,10 +21,16 @@
                             </div>
                         </div>
                     </div>
+                  
                 </div>
+               
             </ng-container>
+          <div class="container">
+            <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+          </div>
         </div>
 
-        <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+ 
     </div>
+  
 </div>
