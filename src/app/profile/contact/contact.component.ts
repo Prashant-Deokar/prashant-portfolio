@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
+import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Subject } from 'rxjs';
 
 import { environment } from '../../../environments/environment';
 import { ProfileService } from '../profile.service';
@@ -17,8 +19,11 @@ export class ContactComponent implements OnInit {
   constructor( private formBuilder:FormBuilder, private http:HttpClient,private profileService:ProfileService){}
 
   ngOnInit() {
-this.contactForm=this.formBuilder.group({
-
+   this.contactForm=this.formBuilder.group({
+name:[' ',(Validators.required)],
+Subject:[' ',(Validators.required)],
+email:[' ',(Validators.required)],
+Message:[' ',(Validators.required)]
 })
 
 
@@ -26,11 +31,14 @@ this.contactForm=this.formBuilder.group({
      onSubmit(){
       console.log(this.contactForm.value);
       
-      this.profileService.sentMessage(this.contactForm.value).subscribe(res=>{
-        alert("dsdsd")
-       console.log(res);
-    
-      });
+      if(this.contactForm.valid){
+        this.profileService.sentMessage(this.contactForm.value).subscribe(res=>{
+          alert("sucessfully")
+         console.log(res);
+      
+        });
+      }
+      
       
      }
 

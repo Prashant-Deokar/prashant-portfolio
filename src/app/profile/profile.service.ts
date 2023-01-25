@@ -18,7 +18,7 @@ export class ProfileService {
       id: 1,
       title: 'Read data from Google spreadsheet in Angular',
       desc: '',
-      livedemo: '#',
+     
       githurl: 'https://github.com/code-WithPrashant',
       mediumlink: '#',
       imgUrl: 'assets/images/z1.png',
@@ -29,7 +29,7 @@ export class ProfileService {
       id: 2,
       title: 'Blog App Using MERN Stack',
       desc: '',
-      livedemo: '#',
+     
       githurl: 'https://github.com/code-WithPrashant',
       mediumlink: '',
       imgUrl: 'assets/images/z26.png',
@@ -242,6 +242,7 @@ export class ProfileService {
   }
 
   sentMessage(data:any) {
+    
     return this.http.post(`http://localhost:9090/api/message`,data);
     //  return this.http.post(this.baseUrl + data);
 
