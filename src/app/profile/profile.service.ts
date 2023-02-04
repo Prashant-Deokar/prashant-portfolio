@@ -16,18 +16,18 @@ export class ProfileService {
   projects:any = [
     {
       id: 1,
-      title: 'Read data from Google spreadsheet in Angular',
+      title: 'E-Commarce Platform ,  Your Beauty. Our Passion',
       desc: '',
      
       githurl: 'https://github.com/code-WithPrashant',
       mediumlink: '#',
-      imgUrl: 'assets/images/z1.png',
-      tech: 'Angular 10 , Google SpreadsheetApi'
+      imgUrl: 'assets/images/nykaa1.png',
+      tech: ' Java 8, Jsp, Servlet, Jdbc, MySql'
     },
 
     {
       id: 2,
-      title: 'Blog App Using MERN Stack',
+      title: 'Employee Management System',
       desc: '',
      
       githurl: 'https://github.com/code-WithPrashant',
@@ -59,7 +59,7 @@ export class ProfileService {
   skillsData: any = [
     {
       'id': '1',
-      'skill': 'ANGULAR 2+',
+      'skill': 'ANGULAR 8',
       'progress': '75%'
     },
     {
@@ -129,7 +129,7 @@ export class ProfileService {
       location: 'Pune',
       timeline: 'march 2022 to December',
       role: 'Full Stack Developer',
-      work: `I am working on Ondc project of protean eGov Technologies Pvt.Ltd.  
+      work: `I did work on Ondc project of protean eGov Technologies Pvt.Ltd.  
       (Formerly NSDL e-Governance Infrastructure Limited) .
 
       Project - Ondc (Open network digital commerce) .
@@ -155,7 +155,7 @@ export class ProfileService {
       Worked on the product of Growth99 which allowed other clients to come and integrate our product in their website .
       Worked on REST Api , Admin Dashboard , Appointment Booking for services and UI of the application .
       Created sections like templates for email, sms, landing pages, clinic, services, providers and triggers Automation .
-      This project was based on Booking appointments. A doctor will be able to see he’s booking history, A patient can book an appointment through this website, patient can discuss with a doctor, online money transaction is also available. In this project I worked on Angular, I fixed some bugs like restrictions and validations, added some functionality in this project like country code, Export as PDF and ExporASExcel, Duplication &Deletion issues, 
+      This project was based on Booking appointments. A doctor will be able to see he’s booking history, A patient can book an appointment through this website, patient can discuss with a doctor, online money transaction is also available. In this project I worked on Angular, I fixed bugs like restrictions and validations, added some functionality in this project like country code, Export as PDF and ExporASExcel, Duplication &Deletion issues, 
       calendar issues and added some editable Option Fixed error message and clickable bugs.`
     },
   //   {
@@ -243,7 +243,7 @@ export class ProfileService {
 
   sentMessage(data:any) {
     
-    return this.http.post(`http://localhost:9090/api/message`,data);
+    return this.http.post(`http://localhost:9090/api/meassge`, data);
     //  return this.http.post(this.baseUrl + data);
 
   }

@@ -7,7 +7,12 @@
 #title{
     color: #fff;
 }
-
+a{
+    background-color: rgb(22, 199, 63);
+    position: relative;
+    left: 30%;
+    right: 30%;
+}
 @media screen and (max-width: 768px) {
     .blog-entry {
         margin-bottom: 3em;
